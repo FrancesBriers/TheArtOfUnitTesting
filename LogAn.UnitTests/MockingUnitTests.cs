@@ -28,6 +28,11 @@ namespace LogAn.UnitTests
         {
             email = emailInfo;
         }
+
+        public void SendEmail(string to, string subject, string body)
+        {
+            throw new NotImplementedException();
+        }
     }
 
     [TestFixture]
@@ -72,9 +77,7 @@ namespace LogAn.UnitTests
             };
             Assert.AreEqual(expectedEmail, mockEmail.email);
         }
-    
     }
 
-  
-    }
 }
+
